@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "icone": "chromium.png",
+        "cor": "#4285F4",
+        "descricao": "Navegador de código aberto, rápido e leve, baseado no projeto Chromium.",
+        "tecnologias": ["JavaScript", "HTML", "CSS"],
+        "link": "/chromium"
+    },
+    {
+        "id": 2,
+        "icone": "react.png",
+        "cor": "#61DAFB",
+        "descricao": "Biblioteca JavaScript para construir interfaces de usuário, desenvolvida pelo Facebook.",
+        "tecnologias": ["JavaScript", "JSX"],
+        "link": "/react"
+    },
+    {
+        "id": 3,
+        "icone": "ubuntu.png",
+        "cor": "#E95420",
+        "descricao": "Distribuição Linux baseada em Debian, conhecida por sua facilidade de uso e comunidade ativa.",
+        "tecnologias": ["C", "C++", "Python"],
+        "link": "/ubuntu"
+    },
+    {
+        "id": 4,
+        "icone": "git.png",
+        "cor": "#F05032",
+        "descricao": "Sistema de controle de versão distribuído, amplamente utilizado para rastrear alterações em arquivos.",
+        "tecnologias": ["C", "Perl", "Shell"],
+        "link": "/git"
+    },
+    {
+        "id": 5,
+        "icone": "android.png",
+        "cor": "#3DDC84",
+        "descricao": "Sistema operacional baseado em Linux, projetado principalmente para dispositivos móveis.",
+        "tecnologias": ["Java", "Kotlin", "C++"],
+        "link": "/android"
+    },
+    {
+        "id": 6,
+        "icone": "typescript.png",
+        "cor": "#007ACC",
+        "descricao": "Superset do JavaScript que adiciona tipagem estática opcional e outros recursos.",
+        "tecnologias": ["JavaScript", "TypeScript"],
+        "link": "/typescript"
+    },
+    {
+        "id": 7,
+        "icone": "tensorflow.png",
+        "cor": "#FF6F20",
+        "descricao": "Biblioteca de código aberto para aprendizado de máquina e inteligência artificial.",
+        "tecnologias": ["Python", "C++", "CUDA"],
+        "link": "/tensorflow"
+    },
+    {
+        "id": 8,
+        "icone": "docusaurus.png",
+        "cor": "#2B7489",
+        "descricao": "Framework para construir sites de documentação com React, fácil de usar e personalizar.",
+        "tecnologias": ["JavaScript", "React"],
+        "link": "/docusaurus"
+    }
+]
