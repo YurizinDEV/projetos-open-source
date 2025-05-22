@@ -1,0 +1,35 @@
+.titulo {
+    background: linear-gradient(rgba(230, 238, 245, 0.7), rgba(230, 238, 245, 0.7)), url(../../public/images/headerBackground.jpg) no-repeat center center/cover;
+    color: #202124;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    font-size: 4rem;
+    font-weight: bold;
+    color: #222;
+    border-radius: 12px;
+    padding: 16px 32px;
+    margin: 0;
+}
+
+.search-input {
+    margin: 16px auto 16px 8px;
+    padding: 16px 24px;
+    width: 420px;
+    max-width: 90vw;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+.search-input:focus {
+    border: 1.5px solid #3182ce;
+    box-shadow: 0 4px 16px rgba(49,130,206,0.12);
+}
