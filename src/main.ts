@@ -1,43 +1,38 @@
-import './style.css'
+import './styles/index.css'
+import type { Card } from './models/Card'
 
-interface Card {
-  id: number,
-  icone: string,
-  cor: string,
-  titulo: string,
-  descricao: string,
-  tecnologias: string[],
-  link: string
-}
+const app = document.querySelector<HTMLDivElement>('#app')!
 
 async function carregarCards() {
-
-  const app = document.querySelector<HTMLDivElement>('#app')!
-  const response = await fetch('https://localhost:5173/cards.json')
+  const response = await fetch('./cards.json')
   const cards: Card[] = await response.json()
 
-  app.innerHTML = '<h1 class="titulo">Olá Mundo da Web!</h1>'
+  app.innerHTML = `
+  <h1 class="titulo">Projetos Open Source</h1>
+  <div>
+    <input type="text" placeholder="Buscar projetos..." class="buscar">
+  </div>
+  <div id="cards-container" class="cards-container"></div>
+  `
 
-  const cardsContainer = document.querySelector<HTMLDivElement>('#cards')!
-  // cardsContainer.innerHTML = '<div> Card 1 </div> <div> Card 2 </div> <div> Card 3 </div>'
+  const cardsContainer = document.querySelector<HTMLDivElement>("#cards-container")!
 
-  cards.forEach((card) => {
+  cards.forEach(card => {
     const cardDiv = document.createElement('div')
+    cardDiv.classList.add('card')
+
     cardDiv.innerHTML = `
-      <div class="card-icone" style="background-color: ${card.cor}">
-        <img src="${card.icone}" alt="${card.titulo}">
-      </div>
-      <h2>${card.titulo}</h2>
-      <p>${card.descricao}</p>
-      <p>${card.tecnologias.join(', ')}</p>
-      <a href="${card.link}" target="_blank">Ver mais</a>
+    <div class="imagem-card" style="background-color: ${card.cor};"><img src="/${card.icone}"></div>
+    <div class="titulo-card"><h3>${card.titulo}</h3></div>
+    <div class="descricao-card">${card.descricao}</div>
+    <div class="tags-card">
+      ${card.tecnologias.map(tecnologia =>`<div class="tag-card">${tecnologia}</div>`).join('')}
+    </div>
+    <div class="projeto-card"><span>Ver projeto</span></div>
     `
+
     cardsContainer.appendChild(cardDiv)
   })
-
-
 }
 
 carregarCards()
-
-
