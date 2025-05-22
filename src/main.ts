@@ -31,8 +31,15 @@ async function carregarCards() {
     <div class="projeto-card"><span>Ver projeto</span></div>
     `
 
+
     cardsContainer.appendChild(cardDiv)
   })
 }
 
+async function footer() {
+
+}
+
+
 carregarCards()
+footer()
